@@ -16,7 +16,7 @@ const Cart = (props) => {
   let data = props.location.data ? props.location.data : products;
   console.log(`data:${JSON.stringify(data)}`);
 
-  return <Accordion defaultActiveKey="0">{list}</Accordion>;
+  return <Accordion defaultActiveKey="0">{props.list}</Accordion>;
 };
 
 const useDataApi = (initialUrl, initialData) => {
